@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import History from './components/History.vue'
-import Chat from './components/Chat.vue'
+import { History } from './components'
+import { Chat } from './components'
 
 </script>
 
