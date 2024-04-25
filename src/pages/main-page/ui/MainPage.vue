@@ -17,6 +17,7 @@ import { Chat } from './components'
 	display: grid;
 	grid-template:
 		'history chat'
-		/ auto 1fr
+		/ auto 1fr;
+	width: 100%;
 }
 </style>
