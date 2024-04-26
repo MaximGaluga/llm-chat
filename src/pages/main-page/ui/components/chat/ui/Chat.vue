@@ -1,8 +1,15 @@
+<script setup lang="ts">
+import { Message } from './components'
+
+
+</script>
+
 <template>
 	<div class="chat-wrapper">
 		<div class="chat-field">
 			<div class="chat">
-				12312
+				<Message :text="'123'" isUser />
+				<Message :text="'123'" v-for="a in 100" />
 			</div>
 		</div>
 		<div class="input-wrapper">
@@ -21,6 +28,7 @@
 <style scoped lang="scss">
 .chat-wrapper
 {
+	margin-top: 15px;
 	display: grid;
 	grid-template:
 		'chat' 1fr
@@ -39,7 +47,11 @@
 {
 	display: flex;
 	flex-direction: column;
+	gap: 10px;
 	flex-basis: 70%;
+	height: 80vh;
+	overflow-y: auto;
+	padding: 15px;
 }
 
 .input-wrapper
